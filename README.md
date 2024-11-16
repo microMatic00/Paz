@@ -1,8 +1,25 @@
-### start using this template by running:
- `npm create astro@latest -- --template SofiDevO/portfolio-sofidev-garrux`
-# Portfolio Template with Astro
 
-Welcome to the Portfolio Template built with Astro! This responsive template allows you to showcase all your projects with an amazing UI. Below you'll find instructions on how to use this template, including how to add new portfolio items, main dependencies, and examples of usage.
+Como levantar el proyecto: 
+    1 - npm install 
+    2 - npm start
+
+Crear una branch antes de comenzar una tarea: 
+
+    1 - git checkout -b nombredelarama
+
+una vez que haya terminado con la tarea 
+    1 - git add . 
+    2 - git commit -m "mensaje resumiendo lo hecho en el commit" 
+    3 - git push
+
+Traer nuevos cambios de la rama actual:
+  1 - git pull --rebase
+
+Como eliminar rama:
+  1 - moverse a otra rama
+  2 - git branch -d nombrederama (para borrar rama local)
+  3 - git branch -D nombrederama (para forzar el borrado)
+  4 - git push origin --delete nombrederama (borrar rama remota)
 
 ![Portada](image-1.png)
 ## Table of Contents
