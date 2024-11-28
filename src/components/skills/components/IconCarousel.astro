@@ -1,0 +1,27 @@
+---
+import './icon-carousel.css';
+
+interface Icon {
+    src: string;
+    name: string;
+}
+
+const icons: Icon[] = [
+    { src: '/assets/canva.svg', name: 'Canva' },
+    { src: '/assets/ilustrator.svg', name: 'Ilustrator' },
+    { src: '/assets/capcut.svg', name: 'Capcut' },
+    { src: '/assets/notion.svg', name: 'Notion' },
+    { src: '/assets/cutpro.svg', name: 'Final Cut Pro' },
+    { src: '/assets/adobe.svg', name: 'Adobe Podcast' },
+    
+];
+---
+
+<div class="carousel">
+    {icons.map(icon => (
+        <div class="carousel-item">
+            <img src={icon.src} alt={icon.name} />
+            <span>{icon.name}</span>
+        </div>
+    ))}
+</div>

@@ -1,0 +1,40 @@
+.carousel {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	padding: 1rem;
+}
+
+.carousel-item {
+	flex: 0 0 auto;
+	width: 120px;
+	margin: 0 15px;
+	text-align: center;
+	scroll-snap-align: center;
+	background-color: #222222; /* Fondo oscuro sutil */
+	border-radius: 12px; /* Bordes más redondeados */
+	padding: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+	display: flex;
+	flex-direction: column; /* Alinea los elementos en columna */
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel-item img {
+	width: 80px; /* Aumenta el tamaño del icono */
+	height: 80px; /* Aumenta el tamaño del icono */
+}
+
+.carousel-item span {
+	display: block;
+	margin-top: 10px;
+	font-size: 1rem;
+	color: #ffffff; /* Color de texto blanco para mejor legibilidad */
+}
+
+/* Opción con borde suave alrededor del ícono */
+.carousel-item:hover {
+	background-color: #333333; /* Un tono más claro al hacer hover */
+	border: 2px solid #7c39fd47; /* Borde sutil con el tono de Canva */
+}

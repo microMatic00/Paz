@@ -1,27 +1,27 @@
+Como levantar el proyecto:
+1 - npm install
+2 - npm start
 
-Como levantar el proyecto: 
-    1 - npm install 
-    2 - npm start
-
-Crear una branch antes de comenzar una tarea: 
+Crear una branch antes de comenzar una tarea:
 
     1 - git checkout -b nombredelarama
 
-una vez que haya terminado con la tarea 
-    1 - git add . 
-    2 - git commit -m "mensaje resumiendo lo hecho en el commit" 
-    3 - git push
+una vez que haya terminado con la tarea
+1 - git add .
+2 - git commit -m "mensaje resumiendo lo hecho en el commit"
+3 - git push
 
 Traer nuevos cambios de la rama actual:
-  1 - git pull --rebase
+1 - git pull --rebase
 
 Como eliminar rama:
-  1 - moverse a otra rama
-  2 - git branch -d nombrederama (para borrar rama local)
-  3 - git branch -D nombrederama (para forzar el borrado)
-  4 - git push origin --delete nombrederama (borrar rama remota)
+1 - moverse a otra rama
+2 - git branch -d nombrederama (para borrar rama local)
+3 - git branch -D nombrederama (para forzar el borrado)
+4 - git push origin --delete nombrederama (borrar rama remota)
 
 ![Portada](image-1.png)
+
 ## Table of Contents
 
 1. [Usage](#usage)
@@ -58,45 +58,47 @@ The data for your portfolio should follow this format:
  * @type {PortfolioData[]}
  */
 export const portfolioData = [
-    {
-        imgSrc: 'https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2021/06/copy-of-the-6-best-restaurant-website-templates-1.png',
-        title: 'Restaurant',
-        skills: ['React', 'StyledComponents'],
-        description: 'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-        demoURL: '',
-        repoURL: '',
-        anim: 'fade-right',
-    },
-    {
-        imgSrc: 'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/299377097/original/7eb7dcebe244fcf5ad75d92b0969fc116946bd57/create-professional-amd-responsive-wordpress-website.jpg',
-        title: 'E-commerce',
-        skills: ['JavaScript', 'Bootstrap'],
-        description: 'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-        demoURL: '',
-        repoURL: '',
-        anim: 'fade-up',
-        averageBrightness: 0.1,
-    },
-    // Add more portfolio items here
+	{
+		imgSrc: 'https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2021/06/copy-of-the-6-best-restaurant-website-templates-1.png',
+		title: 'Restaurant',
+		skills: ['React', 'StyledComponents'],
+		description:
+			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
+		demoURL: '',
+		repoURL: '',
+		anim: 'fade-right',
+	},
+	{
+		imgSrc: 'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/299377097/original/7eb7dcebe244fcf5ad75d92b0969fc116946bd57/create-professional-amd-responsive-wordpress-website.jpg',
+		title: 'E-commerce',
+		skills: ['JavaScript', 'Bootstrap'],
+		description:
+			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
+		demoURL: '',
+		repoURL: '',
+		anim: 'fade-up',
+		averageBrightness: 0.1,
+	},
+	// Add more portfolio items here
 ];
 
 const skillIcons = {
-    JavaScript: 'skill-icons:javascript',
-    React: 'skill-icons:react-dark',
-    Astro: 'skill-icons:astro',
-    CSS: 'skill-icons:css',
-    Sass: 'skill-icons:sass',
-    StyledComponents: 'skill-icons:styledcomponents',
-    Bootstrap: 'skill-icons:bootstrap',
-    Tailwind: 'skill-icons:tailwindcss-dark',
+	JavaScript: 'skill-icons:javascript',
+	React: 'skill-icons:react-dark',
+	Astro: 'skill-icons:astro',
+	CSS: 'skill-icons:css',
+	Sass: 'skill-icons:sass',
+	StyledComponents: 'skill-icons:styledcomponents',
+	Bootstrap: 'skill-icons:bootstrap',
+	Tailwind: 'skill-icons:tailwindcss-dark',
 };
 
 /**
  * @description Maps portfolioData to include skill icons
  */
 export const getPortfolioData = portfolioData.map((item) => ({
-    ...item,
-    skills: item.skills.map((skill) => skillIcons[skill]),
+	...item,
+	skills: item.skills.map((skill) => skillIcons[skill]),
 }));
 ```
 
@@ -130,7 +132,7 @@ Add the Iconify script to the `<head>` section of your project:
 
 ```html
 <head>
-    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+	<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
 ```
 
@@ -140,11 +142,11 @@ Once this script is included, you can use any Iconify icon by specifying its ide
 
 This template leverages several modern technologies to create a highly responsive and visually appealing portfolio:
 
-- **Astro**: A modern static site builder that allows you to use your favorite frameworks such as React, Vue, and Svelte. It optimizes for performance by shipping less JavaScript.
-- **React**: A JavaScript library for building user interfaces, which allows for the creation of reusable components.
-- **Tailwind CSS**: A utility-first CSS framework that enables you to design directly in your markup, providing flexibility and control over your styling.
-- **Styled Components**: A library for React and React Native that allows you to use component-level styles in your application. It utilizes tagged template literals to style components.
-- **Iconify**: A comprehensive library for icons that provides access to thousands of icons from different collections, all accessible via a single syntax.
+-   **Astro**: A modern static site builder that allows you to use your favorite frameworks such as React, Vue, and Svelte. It optimizes for performance by shipping less JavaScript.
+-   **React**: A JavaScript library for building user interfaces, which allows for the creation of reusable components.
+-   **Tailwind CSS**: A utility-first CSS framework that enables you to design directly in your markup, providing flexibility and control over your styling.
+-   **Styled Components**: A library for React and React Native that allows you to use component-level styles in your application. It utilizes tagged template literals to style components.
+-   **Iconify**: A comprehensive library for icons that provides access to thousands of icons from different collections, all accessible via a single syntax.
 
 ## Figma Design
 
@@ -152,8 +154,8 @@ You can view and edit the design of this template on Figma. Here is the [Figma d
 
 ## Author and License
 
-- **Author**: SofiDev / Garrux
-- **License**: MIT
+-   **Author**: SofiDev / Garrux
+-   **License**: MIT
 
 ## Bugs and Issues
 
