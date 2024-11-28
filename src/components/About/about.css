@@ -39,6 +39,17 @@
 	font-size: 2.1rem;
 	max-width: 70.19rem;
 }
+.flags {
+	display: flex;
+	gap: 10px; /* Espacio entre las banderas */
+}
+
+.flag-icon {
+	width: 60px; /* Ajusta el tamaño según sea necesario */
+	height: auto;
+	margin-right: 5px;
+	vertical-align: middle; /* Alinea verticalmente con el texto */
+}
 
 @media screen and (max-width: 768px) {
 	.about__container {

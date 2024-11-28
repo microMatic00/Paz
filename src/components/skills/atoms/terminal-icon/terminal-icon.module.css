@@ -16,6 +16,9 @@
 .name {
 	font-size: var(--text-general);
 }
+.name {
+	white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
 .icon {
 	display: inline-block;
 	width: 1em;

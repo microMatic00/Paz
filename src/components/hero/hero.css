@@ -41,8 +41,11 @@
 
 .hero .hero__text {
 	font-size: var(--text-xx-large);
+	margin-bottom: 1rem;
 }
-
+.hero .hero__text + .button {
+	margin-top: 1rem; /* Agrega un margen superior al botón */
+}
 .hero__container .text__content {
 	font-weight: 600;
 	display: flex;
